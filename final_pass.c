@@ -51,6 +51,9 @@ user user1;
 
 /**************************************************************************************************************************************************************/
 
+
+// function to start the Smart home APP
+
 void VSTART_APP()
 {
 	LCD_VidSendCommand(0x01);
@@ -85,6 +88,9 @@ void VSTART_APP()
 
 
 /**************************************************************************************************************************************************************/
+
+// passing default pass based on value Get from Username check function 
+
 
 u8 VPASS_CHECK(u8 USER)
 {
@@ -278,6 +284,15 @@ u8 VPASS_CHECK(u8 USER)
 //u8 *c[] = { (u8 *)"Ahmed" , (u8 *)"mosad", (u8 *)"amr",(u8 *)"bahaa",(u8 *)"bahaa",(u8 *)"bahaa",(u8 *)"bahaa",(u8 *)"bahaa" }; // GLOBAL Array for usernames
 
 
+
+/*
+
+Function to check username by condition of first character and then checking for other characters
+
+
+
+
+*/
 
 u8 VCHECK_NAME(u8* b)
 {
